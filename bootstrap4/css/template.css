@@ -1,0 +1,35 @@
+.content {
+    min-height: 300px;
+}
+.large-icon {
+    font-size: 13em !important;
+}
+.contact .contact-address {
+    padding: 0 1.5rem;
+}
+.navbar .mod-languages {
+    padding-bottom: 0.425rem;
+    padding-top: 0.425rem;
+}
+.lang-inline {
+    list-style: outside none none;
+    margin: 0;
+}
+.lang-inline > li {
+    display: inline;
+    margin-left: 8px;
+}
+.login {
+    margin: 0 auto;
+    max-width: 330px;
+    padding-top: 1em;
+}
+.tags.inline {
+    padding-left: 0;
+}
+.tags.inline li {
+    display: inline;
+}
+.item-image {
+    margin-bottom: 20px;
+}

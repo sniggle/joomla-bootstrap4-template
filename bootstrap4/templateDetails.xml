@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+    <name>bootstrap4</name>
+    <version>1.0</version>
+    <creationDate>19/03/2016</creationDate>
+    <author>Jochen Wiesel</author>
+    <authorEmail>jochen@sniggle.me</authorEmail>
+    <copyright>Copyright (C) 2016 sniggle.me. All rights reserved.</copyright>
+    <description>TPL_BOOTSTRAP4_XML_DESCRIPTION</description>
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+    </files>
+    <positions>
+        <position>banner</position>
+        <position>debug</position>
+        <position>breadcrumbs</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>navbar-1</position>
+        <position>navbar-2</position>
+        <position>contributors</position>
+        <position>position-6</position>
+        <position>position-7</position>
+        <position>position-8</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-13</position>
+        <position>position-14</position>
+        <position>footer</position>
+    </positions>
+    <languages folder="language">
+        <language tag="de-DE">de-DE/de-DE.tpl_bootstrap4.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_bootstrap4.sys.ini</language>
+        <language tag="de-DE">en-GB/en-GB.tpl_bootstrap4.ini</language>
+        <language tag="de-DE">en-GB/en-GB.tpl_bootstrap4.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="sitedescription"  type="text" default=""
+                        label="JGLOBAL_DESCRIPTION"
+                        description="JGLOBAL_SUBHEADING_DESC"
+                        filter="string" />
+                <field name="favicon" class="" type="text" default="/templates/bootstrap4/favicon.ico"
+			label="TPL_BOOTSTRAP4_FAVICON"
+			description="TPL_BOOTSTRAP4_FAVICON_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
