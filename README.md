@@ -1,5 +1,5 @@
 # Joomla! Bootstrap4 Template
-**A Joomla! 3 Site template for Bootstrap 4 (Alpha 3)**
+**A Joomla! 3 Site template for Bootstrap 4 (Alpha 4)**
 
 ## About this Joomla! template
 Out of the box Joomla! shipps with Bootstrap version 2.
@@ -26,7 +26,7 @@ You can either just let us know, or create your own override in the template fol
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
+* Bootstrap v4.0.0-alpha.4 (http://getbootstrap.com)
 * Font Awesome 4.6.3 by @davegandy - http://fontawesome.io
 * Tether version 1.3.3 - http://tether.io/
 
