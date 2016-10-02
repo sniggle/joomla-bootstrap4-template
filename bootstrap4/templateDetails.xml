@@ -46,8 +46,8 @@
     <languages folder="language">
         <language tag="de-DE">de-DE/de-DE.tpl_bootstrap4.ini</language>
         <language tag="de-DE">de-DE/de-DE.tpl_bootstrap4.sys.ini</language>
-        <language tag="de-DE">en-GB/en-GB.tpl_bootstrap4.ini</language>
-        <language tag="de-DE">en-GB/en-GB.tpl_bootstrap4.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_bootstrap4.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_bootstrap4.sys.ini</language>
     </languages>
     <config>
         <fields name="params">
