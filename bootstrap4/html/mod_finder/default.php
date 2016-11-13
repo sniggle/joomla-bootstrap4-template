@@ -143,7 +143,7 @@ $script .= "});";
 JFactory::getDocument()->addScriptDeclaration($script);
 ?>
 
-<form id="mod-finder-searchform" action="<?php echo JRoute::_($route); ?>" method="get" class="form-search form-inline pull-sm-right">
+<form id="mod-finder-searchform" action="<?php echo JRoute::_($route); ?>" method="get" class="form-search form-inline">
 	<div class="finder<?php echo $suffix; ?>">
 		<?php
 		// Show the form fields.

@@ -78,7 +78,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
         </header>
         <div class="body">
             <div class="content">
-                <div class="jumbotron jumbotron-fluid bg-primary">
+                <div class="jumbotron jumbotron-fluid bg-primary text-white">
                     <div class="container">
                         <?php if(JURI::base() == JURI::current()) { ?>
                             <h1><?php echo $app->get('sitename'); ?></h1>
