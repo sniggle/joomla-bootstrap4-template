@@ -10,6 +10,29 @@ The template adds the typical look & feel of Bootstrap 4 to your Joomla! 3 site.
 Various components and modules have been integrated into the template. Therefore you don't need to create overrides.
 Just install the template and try it out.
 
+### How it works & supported Joomla! UI elements
+The template is based on the standard Bootstrap 4 look & feel and uses HTML overrides for the Joomla! user interface elements where possible. For forms we added a little javascript to add the missing CSS classes to avoid core-hacks.
+The following user interface elements are supported right now:
+* com_content --> Articles
+* com_contact --> Contacts
+* com_finder --> Smart Search
+* com_users --> Users
+* mod_breadcrumbs --> Breadcrumb Navigation
+* mod_finder --> Smart Search Module
+* mod_languages --> Language Switcher
+* mod_menu --> Menu Navigation
+* and a lot of other ui elements like System Messages, Pagination, etc.
+You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
+If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template..com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
+If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
+
+### jQuery compatibility
+The minimal jQuery version required for Bootstrap 4 (Alpha 5) is 1.9.1. Joomla! 3.6.4 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://v4-alpha.getbootstrap.com/getting-started/javascript/#dependencies 
+
+### Bootstrap 2 and Bootstrap 4 in one site?
+As Joomla! 3 shipps with Bootstrap 2.3.2, it automatically loads the bootstrap framework where needed. The Javascript files of Bootstrap 2 and Bootstrap 4 loaded at the same time can result in strange UI behaviors. (e.g. Dropdowns don't load correctly or after several seconds, etc.)
+To avoid this conflict we developed a little plugin to disable the Joomla! UI Bootstrap version in the frontend of your site. Just get it here https://github.com/sniggle/joomla-disable-jui-bootstrapand and install it with the template to have the best user experience. 
+
 ## Demo of this template
 You just want to have a look how the Joomla! Boostrap4 template works?
 Just visit https://www.theaterverein-mastershausen.de/. The site is using our template.
@@ -19,8 +42,13 @@ You can always find the latest compiled version of the template here: https://gi
 Alternatively you can also just download the "bootstrap" folder of the repository, zip it and install it in your site to get the latest commits.
 
 ## Let us improve this Bootstrap 4 template
-We are happy for any kind of feedback. Did we miss a joomla component, module or layout?
-You can either just let us know, or create your own override in the template folder. If you want, feel free to share it with us. :-)
+We are happy for any kind of feedback:
+* Did we miss a joomla component, module or layout?
+* Do you have improvement ideas in the existing overrides?
+Just create an issue here on github and let us know! :-)
+
+### Created your own version of the Joomla! Bootstrap 4 template
+The template is very close the Joomla! 3 standard and Bootstrap 4 standard behavior. You can also use it as a starting point for your own Bootstrap 4 template. Just use the existing overrides and change your index.php according to your design ideas. :-)
 
 ## License of this Joomla! template
 The template is based on a famous Joomla! 3 template called Protostar.
