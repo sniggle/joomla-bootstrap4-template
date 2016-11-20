@@ -1,5 +1,5 @@
 # Joomla! Bootstrap4 Template
-**A Joomla! 3 Site template for Bootstrap 4 (Alpha 4)**
+**A Joomla! 3 Site template for Bootstrap 4 (Alpha 5)**
 
 ## About this Joomla! template
 Out of the box Joomla! shipps with Bootstrap version 2.
@@ -13,17 +13,19 @@ Just install the template and try it out.
 ### How it works & supported Joomla! UI elements
 The template is based on the standard Bootstrap 4 look & feel and uses HTML overrides for the Joomla! user interface elements where possible. For forms we added a little javascript to add the missing CSS classes to avoid core-hacks.
 The following user interface elements are supported right now:
+Components:
 * com_content --> Articles
 * com_contact --> Contacts
 * com_finder --> Smart Search
+* com_tags --> Tags
 * com_users --> Users
+Modules:
 * mod_breadcrumbs --> Breadcrumb Navigation
-* mod_finder --> Smart Search Module
+* mod_finder --> Smart Search
 * mod_languages --> Language Switcher
 * mod_menu --> Menu Navigation
 * and a lot of other ui elements like System Messages, Pagination, etc.
 You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
-If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template..com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
 
 ### jQuery compatibility
