@@ -66,12 +66,12 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
         <![endif]-->
     </head>
     <body>
-        <header class="navbar navbar-static-top navbar-light bg-faded" role="banner">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-                &#9776;
-            </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-                <a class="navbar-brand" href="<?php echo JURI::base(); ?>"><?php echo $app->get('sitename'); ?></a>
+        <header class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="<?php echo JURI::base(); ?>"><?php echo $app->get('sitename'); ?></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <jdoc:include type="modules" name="navbar-1" style="none" />
                 <jdoc:include type="modules" name="navbar-2" style="none" />
             </div>

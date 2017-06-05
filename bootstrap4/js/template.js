@@ -29,6 +29,7 @@
             $('.control-group input[type=file]').addClass('form-control-file');
             //$('.control-group input[type=radio]').addClass('form-check-input'); //Would require reformatting of html-structure
             $('.control-group input[type=checkbox]').addClass('form-check-input');
+			$('.form-check input[type=checkbox]').addClass('form-check-input');
             //Contact form
             $('.form-group input').addClass('form-control');
             $('.form-group textarea').addClass('form-control');

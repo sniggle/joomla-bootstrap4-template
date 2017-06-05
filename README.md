@@ -1,5 +1,5 @@
 # Joomla! Bootstrap4 Template
-**A Joomla! 3 Site template for Bootstrap 4 (Alpha 5)**
+**A Joomla! 3 Site template for Bootstrap 4 (Alpha 6)**
 
 ## About this Joomla! template
 Out of the box Joomla! shipps with Bootstrap version 2.
@@ -29,7 +29,7 @@ You can also check the details here: https://github.com/sniggle/joomla-bootstrap
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
 
 ### jQuery compatibility
-The minimal jQuery version required for Bootstrap 4 (Alpha 5) is 1.9.1. Joomla! 3.6.4 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://v4-alpha.getbootstrap.com/getting-started/javascript/#dependencies 
+The minimal jQuery version required for Bootstrap 4 (Alpha 6) is 1.9.1. Joomla! 3.7.2 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://v4-alpha.getbootstrap.com/getting-started/javascript/#dependencies 
 
 ### Bootstrap 2 and Bootstrap 4 in one site?
 As Joomla! 3 shipps with Bootstrap 2.3.2, it automatically loads the bootstrap framework where needed. The Javascript files of Bootstrap 2 and Bootstrap 4 loaded at the same time can result in strange UI behaviors. (e.g. Dropdowns don't load correctly or after several seconds, etc.)
@@ -56,9 +56,9 @@ The template is very close the Joomla! 3 standard and Bootstrap 4 standard behav
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.0.0-alpha.5 (http://getbootstrap.com)
-* Font Awesome 4.6.3 by @davegandy - http://fontawesome.io
-* Tether version 1.3.3 - http://tether.io/
+* Bootstrap v4.0.0-alpha.6 (http://getbootstrap.com)
+* Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
+* Tether version 1.4.0 - http://tether.io/
 
 
 

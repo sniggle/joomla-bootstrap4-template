@@ -39,9 +39,11 @@ if (isset($this->error)) : ?>
 				<div class="controls"><?php echo $this->form->getInput('contact_message'); ?></div>
 			</div>
 			<?php if ($this->params->get('show_email_copy')) : ?>
-				<div class="form-group">
-					<div class="control-label"><?php echo $this->form->getLabel('contact_email_copy'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('contact_email_copy'); ?></div>
+				<div class="form-check">
+					<label class="form-check-label">
+					<?php echo $this->form->getInput('contact_email_copy'); ?>
+					<?php echo $this->form->getLabel('contact_email_copy'); ?>
+					</label>
 				</div>
 			<?php endif; ?>
 			<?php // Dynamically load any additional fields from plugins. ?>

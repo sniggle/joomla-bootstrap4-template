@@ -83,7 +83,7 @@ jimport('joomla.html.html.bootstrap');
 	<?php endif; ?>
 
 	<?php if ($this->contact->image && $this->params->get('show_image')) : ?>
-		<div class="thumbnail text-xs-center">
+		<div class="thumbnail text-sm-center">
 			<?php echo JHtml::_('image', $this->contact->image, JText::_('COM_CONTACT_IMAGE_DETAILS'), array('align' => 'middle', 'itemprop' => 'image', 'class' => 'img-fluid')); ?>
 		</div>
 	<?php endif; ?>

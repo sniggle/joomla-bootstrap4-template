@@ -70,7 +70,7 @@ jQuery(function() {";
 		<input type="hidden" name="o" value="<?php echo $this->escape($this->state->get('list.ordering')); ?>" />
 	<?php endif; ?>
 
-	<fieldset class="word">
+	<!--<fieldset class="word">-->
 		<label for="q">
 			<?php echo JText::_('COM_FINDER_SEARCH_TERMS'); ?>
 		</label>
@@ -83,7 +83,7 @@ jQuery(function() {";
 		<?php if ($this->params->get('show_advanced', 1)) : ?>
 			<a href="#advancedSearch" data-toggle="collapse" class="btn"><span class="icon-list"></span> <?php echo JText::_('COM_FINDER_ADVANCED_SEARCH_TOGGLE'); ?></a>
 		<?php endif; ?>
-	</fieldset>
+	<!-- </fieldset> -->
 
 	<?php if ($this->params->get('show_advanced', 1)) : ?>
 		<div id="advancedSearch" class="collapse<?php if ($this->params->get('expand_advanced', 0)) echo ' in'?>">

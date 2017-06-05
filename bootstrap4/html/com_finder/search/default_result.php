@@ -48,11 +48,11 @@ if (!empty($this->query->highlight)
 ?>
 
 <li class="list-group-item">
-	<h4 class="result-title <?php echo $mime; ?>">
+	<h4 class="d-flex w-100 result-title <?php echo $mime; ?>">
 		<a href="<?php echo JRoute::_($route); ?>"><?php echo $this->result->title; ?></a>
 	</h4>
 	<?php if ($show_description) : ?>
-		<p class="result-text<?php echo $this->pageclass_sfx; ?>">
+		<p class="mb-1 result-text<?php echo $this->pageclass_sfx; ?>">
 			<?php echo $description; ?>
 		</p>
 	<?php endif; ?>
