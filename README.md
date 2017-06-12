@@ -33,7 +33,7 @@ The minimal jQuery version required for Bootstrap 4 (Alpha 6) is 1.9.1. Joomla! 
 
 ### Bootstrap 2 and Bootstrap 4 in one site?
 As Joomla! 3 shipps with Bootstrap 2.3.2, it automatically loads the bootstrap framework where needed. The Javascript files of Bootstrap 2 and Bootstrap 4 loaded at the same time can result in strange UI behaviors. (e.g. Dropdowns don't load correctly or after several seconds, etc.)
-To avoid this conflict we developed a little plugin to disable the Joomla! UI Bootstrap version in the front-end of your site. Just get it here https://github.com/sniggle/joomla-disable-jui-bootstrapand and install it with the template to have the best user experience. 
+To avoid this conflict we developed a little plugin to disable the Joomla! UI Bootstrap version in the front-end of your site. Just get it here https://github.com/sniggle/joomla-disable-jui-bootstrap and install it with the template to have the best user experience. 
 
 ## Demo of this template
 You just want to have a look how the Joomla! Boostrap4 template works?
