@@ -33,6 +33,7 @@
             //Contact form
             $('.form-group input').addClass('form-control');
             $('.form-group textarea').addClass('form-control');
+			$('.form-inline select').addClass('form-control form-control-sm');
             // Support for bootstrap 4 markup also in custom UI elements, which are designed for Bootstrap 2. 
             $('table').addClass('table');
             $('.badge').addClass('tag').addClass('tag-pill');
