@@ -34,7 +34,7 @@ if ($task == "edit" || $layout == "form") {
 // Add JavaScript Frameworks
 JHtml::_('jquery.framework');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/tether.min.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/popper.min.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
 
 // Add Stylesheets
@@ -56,7 +56,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <jdoc:include type="head" />
         <?php if($this->params->get('favicon')) { ?>
             <link rel="shortcut icon" href="<?php echo JUri::root(true) . htmlspecialchars($this->params->get('favicon'), ENT_COMPAT, 'UTF-8'); ?>" />
@@ -66,7 +66,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
         <![endif]-->
     </head>
     <body>
-        <header class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <header class="navbar navbar-expand-lg navbar-light bg-faded">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
