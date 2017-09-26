@@ -1,6 +1,6 @@
 # Joomla! Bootstrap4 Template
 **A Joomla! 3 Site template for Bootstrap 4 (beta)**
-
+ 
 ## About this Joomla! template
 Out of the box Joomla! shipps with Bootstrap version 2.
 Right now the Bootstrap contributors work on Bootstrap version 4, which is getting closer and closer to be released.
