@@ -47,17 +47,15 @@ JFactory::getDocument()->addScriptDeclaration("
 	<?php endif; ?>
 
 	<form action="<?php echo JRoute::_('index.php?option=com_content&a_id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="adminForm" class="form-validate form-vertical">
-		<div class="btn-toolbar">
-			<div class="btn-group">
+		<div class="">
+			<p class="">
 				<button type="button" class="btn btn-primary" onclick="Joomla.submitbutton('article.save')">
-					<span class="icon-ok"></span><?php echo JText::_('JSAVE') ?>
-				</button>
-			</div>
-			<div class="btn-group">
+					<span class="fa fa-floppy-o"></span> <?php echo JText::_('JSAVE') ?>
+				</button> 
 				<button type="button" class="btn btn-secondary" onclick="Joomla.submitbutton('article.cancel')">
-					<span class="icon-cancel"></span><?php echo JText::_('JCANCEL') ?>
+					<span class="fa fa-times"></span> <?php echo JText::_('JCANCEL') ?>
 				</button>
-			</div>
+			</p>
 			<?php if ($params->get('save_history', 0) && $this->item->id) : ?>
 			<div class="btn-group">
 				<?php echo $this->form->getInput('contenthistory'); ?>
