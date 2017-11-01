@@ -24,12 +24,14 @@ Modules:
 * mod_finder --> Smart Search
 * mod_languages --> Language Switcher
 * mod_menu --> Menu Navigation
-* and a lot of other ui elements like System Messages, Pagination, etc.
+Plugins:
+* plg_content_vote --> Joomla Voting & Rating System
+* and a lot of other ui elements like System Messages, Pagination, ReadMore, etc.
 You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
 
 ### jQuery compatibility
-The minimal jQuery version required for Bootstrap 4 (beta) is 1.9.1. Joomla! 3.7.5 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/getting-started/javascript/#dependencies 
+The minimal jQuery version required for Bootstrap 4 (beta) is 1.9.1. Joomla! 3.7.5 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/docs/4.0/getting-started/javascript/#dependencies 
 
 ### Bootstrap 2 and Bootstrap 4 in one site?
 As Joomla! 3 shipps with Bootstrap 2.3.2, it automatically loads the bootstrap framework where needed. The Javascript files of Bootstrap 2 and Bootstrap 4 loaded at the same time can result in strange UI behaviors. (e.g. Dropdowns don't load correctly or after several seconds, etc.)
