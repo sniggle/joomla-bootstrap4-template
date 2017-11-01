@@ -30,6 +30,12 @@ Plugins:
 You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
 
+### Language Support
+Right now the following languages for the Joomla backend are supported in this template:
+* English (en-GB)
+* German (de-DE)
+:sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can create tickets with the file-attachments (just drag&drop into the text-field), or just fork the existing ones: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
+
 ### jQuery compatibility
 The minimal jQuery version required for Bootstrap 4 (beta) is 1.9.1. Joomla! 3.7.5 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/docs/4.0/getting-started/javascript/#dependencies 
 
