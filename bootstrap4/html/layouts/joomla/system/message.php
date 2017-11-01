@@ -1,26 +1,24 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Layout
+ * @subpackage  Template.protostar
  *
- * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-defined('JPATH_BASE') or die;
+defined('_JEXEC') or die;
 
 $msgList = $displayData['msgList'];
 
+$alert = array('error' => 'alert-danger', 'warning' => 'alert-warning', 'notice' => 'alert-info', 'message' => 'alert-success');
 ?>
 <div id="system-message-container">
 	<?php if (is_array($msgList) && !empty($msgList)) : ?>
 		<div id="system-message">
-			<?php foreach ($msgList as $type => $msgs) {
-				if ($type == 'error') {
-					$type = 'danger';
-				}?>
-				<div class="alert alert-<?php echo $type; ?>">
-					<?php // This requires JS so we should add it trough JS. Progressive enhancement and stuff. ?>
+			<?php foreach ($msgList as $type => $msgs) : ?>
+				<div class="alert <?php echo isset($alert[$type]) ? $alert[$type] : 'alert-' . $type; ?>" role="alert">
+					<?php // This requires JS so we should add it through JS. Progressive enhancement and stuff. ?>
 					<a class="close" data-dismiss="alert">×</a>
 
 					<?php if (!empty($msgs)) : ?>
@@ -32,7 +30,7 @@ $msgList = $displayData['msgList'];
 						</div>
 					<?php endif; ?>
 				</div>
-			<?php } ?>
+			<?php endforeach; ?>
 		</div>
 	<?php endif; ?>
 </div>

@@ -132,12 +132,12 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                             &copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
                         </p>
                     </div>
-                    <div class="col-sm-4 text-sm-center">
+                    <div class="col-sm-4 text-center">
                         <jdoc:include type="modules" name="footer" style="none" />
                         <p></p>
                     </div>
                     <div class="col-sm-4">
-                        <p class="text-sm-right">
+                        <p class="text-right">
                             <a href="#top" id="back-top">
                                 <i class="fa fa-arrow-up"></i> <?php echo JText::_('TPL_BOOTSTRAP4_BACKTOTOP'); ?>
                             </a>

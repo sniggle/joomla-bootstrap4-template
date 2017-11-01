@@ -71,10 +71,10 @@ jQuery(function() {";
 	<?php endif; ?>
 
 	<!--<fieldset class="word">-->
-		<label for="q">
+		<label class="sr-only" for="q">
 			<?php echo JText::_('COM_FINDER_SEARCH_TERMS'); ?>
 		</label>
-		<input type="text" name="q" id="q" size="30" value="<?php echo $this->escape($this->query->input); ?>" class="inputbox form-control" />
+		<input type="text" name="q" id="q" size="30" placeholder="<?php echo JText::_('COM_FINDER_SEARCH_TERMS'); ?>" value="<?php echo $this->escape($this->query->input); ?>" class="inputbox form-control mb-2 mr-sm-2 mb-sm-0" />
 		<?php if ($this->escape($this->query->input) != '' || $this->params->get('allow_empty_search')):?>
 			<button name="Search" type="submit" class="btn btn-primary"><span class="fa fa-search"></span> <?php echo JText::_('JSEARCH_FILTER_SUBMIT');?></button>
 		<?php else: ?>

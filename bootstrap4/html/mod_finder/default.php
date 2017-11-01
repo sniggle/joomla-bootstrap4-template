@@ -20,7 +20,7 @@ $lang = JFactory::getLanguage();
 $lang->load('com_finder', JPATH_SITE);
 
 $suffix = $params->get('moduleclass_sfx');
-$output = '<input type="text" name="q" id="mod-finder-searchword" placeholder="' . JText::_('MOD_FINDER_SEARCH_VALUE', true) . '" class="search-query input-medium form-control" size="' . $params->get('field_size', 20) . '" value="' . htmlspecialchars(JFactory::getApplication()->input->get('q', '', 'string')) . '" />';
+$output = '<input type="text" name="q" id="mod-finder-searchword" placeholder="' . JText::_('MOD_FINDER_SEARCH_VALUE', true) . '" class="search-query input-medium form-control mr-sm-2" size="' . $params->get('field_size', 20) . '" value="' . htmlspecialchars(JFactory::getApplication()->input->get('q', '', 'string')) . '" />';
 
 if ($params->get('show_label', 1))
 {
@@ -49,7 +49,7 @@ if ($params->get('show_label', 1))
 
 if ($params->get('show_button'))
 {
-	$button = '<button data-placement="bottom" class="btn btn-outline-success hasTooltip hidden-xs-down ' . $suffix . ' finder' . $suffix . '" type="submit" title="' . JText::_('MOD_FINDER_SEARCH_BUTTON') . '"><span class="fa fa-search"></span></button>';
+	$button = '<button data-placement="bottom" class="btn btn-outline-success hasTooltip my-2 my-sm-0 ' . $suffix . ' finder' . $suffix . '" type="submit" title="' . JText::_('MOD_FINDER_SEARCH_BUTTON') . '"><span class="fa fa-search"></span></button>';
 
 	switch ($params->get('button_pos', 'left'))
 	{
@@ -143,8 +143,8 @@ $script .= "});";
 JFactory::getDocument()->addScriptDeclaration($script);
 ?>
 
-<form id="mod-finder-searchform" action="<?php echo JRoute::_($route); ?>" method="get" class="form-search form-inline">
-	<div class="finder<?php echo $suffix; ?>">
+<form id="mod-finder-searchform" action="<?php echo JRoute::_($route); ?>" method="get" class="form-search">
+	<div class="finder form-inline<?php echo $suffix; ?>">
 		<?php
 		// Show the form fields.
 		echo $output;
