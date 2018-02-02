@@ -70,7 +70,7 @@ foreach ($list as $i => &$item)
 	}
 	
 	echo '<li' . $class . '>';
-    $item->anchor_css = 'nav-link';
+    $item->anchor_css = 'nav-link' . $item->anchor_css;
 	if($item->level > 1) {
 		$item->anchor_css = 'dropdown-item';
 	}
