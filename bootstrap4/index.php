@@ -33,8 +33,8 @@ if ($task == "edit" || $layout == "form") {
 
 // Add Stylesheets
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
+$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 
 // Adjusting content width
 if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right')) {
@@ -73,7 +73,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
         <div class="body">
             <div class="content">
                 <div class="jumbotron jumbotron-fluid bg-primary text-white">
-                    <div class="container">
+                    <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
                         <?php if(JURI::base() == JURI::current()) { ?>
                             <h1><?php echo $app->get('sitename'); ?></h1>
                                 <?php if ($this->params->get('sitedescription')) { ?>

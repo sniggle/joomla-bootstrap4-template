@@ -34,6 +34,8 @@ If you are missing components, modules or other UI elements, which are not compa
 Right now the following languages for the Joomla backend are supported in this template:
 * English (en-GB)
 * German (de-DE)
+* Spanish (es-ES)
+* Slovak (sk-SK)
 
 :sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can create tickets with the file-attachments (just drag&drop into the text-field), or just fork the existing ones: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
 

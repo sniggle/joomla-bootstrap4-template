@@ -51,7 +51,7 @@ foreach ($list as $i => &$item)
 
 	if ($item->type == 'separator')
 	{
-		$class .= ' divider';
+		$class .= ' dropdown-divider';
 	}
 
 	if ($item->deeper)
