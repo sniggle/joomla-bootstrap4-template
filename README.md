@@ -71,5 +71,7 @@ The template contains the following libraries
 * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
 * Popper.js 1.12.9 - https://popper.js.org/
 
-
-
+## Fontawesome 4.7 vs. Fontawesome 5
+Recently Fontawesome 5 has been released. It offers a lot of new fonts and also font styles (brands, solid, regular light): https://fontawesome.com/how-to-use/upgrading-from-4
+Unfortunately that change resulted in new CSS class names (e.g. far for regular). Upgrading the Bootstrap 4 template to Fontawesome 5 would mean, that the old "fa" prefix does not work any longer on the mid-term.
+Currently the Joomla 4 development is shooting for Bootstrap 4 + Fontawesome 4.7: https://github.com/joomla/joomla-cms/blob/4.0-dev/templates/cassiopeia/css/template.min.css . Moving to Fontawesome 5 already would make it difficult for all sites using our template difficult again to benefit from the standard Joomla 4.x styling when moving back to a template closer to Joomla standard. Therefore right now we will not migrate to Fontawesome 5. To clarify the question there is an issue in the Joomla cms project: https://github.com/joomla/joomla-cms/issues/20099
