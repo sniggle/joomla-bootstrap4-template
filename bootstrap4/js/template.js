@@ -36,10 +36,8 @@
 			$('.form-inline select').addClass('form-control form-control-sm');
             // Support for bootstrap 4 markup also in custom UI elements, which are designed for Bootstrap 2. 
             $('table').addClass('table');
-            $('.badge').addClass('tag').addClass('tag-pill');
-            $('.badge-info').addClass('tag-info');
-            $('.label').addClass('tag');
-            $('.label-warning').addClass('tag-warning');
+            $('.label').addClass('badge');
+            $('.label-warning').addClass('badge-warning');
             $('.login input').addClass('form-control');
             //$('*[rel=tooltip]').tooltip()
 

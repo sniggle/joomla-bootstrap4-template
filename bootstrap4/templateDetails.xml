@@ -50,9 +50,10 @@
         <language tag="en-GB">en-GB/en-GB.tpl_bootstrap4.sys.ini</language>
         <language tag="es-ES">es-ES/es-ES.tpl_bootstrap4.ini</language>
         <language tag="es-ES">es-ES/es-ES.tpl_bootstrap4.sys.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.tpl_bootstrap4.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.tpl_bootstrap4.sys.ini</language>
         <language tag="sk-SK">sk-SK/sk-SK.tpl_bootstrap4.ini</language>
         <language tag="sk-SK">sk-SK/sk-SK.tpl_bootstrap4.sys.ini</language>
-
     </languages>
     <config>
         <fields name="params">

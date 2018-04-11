@@ -36,6 +36,12 @@ $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/boo
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 
+// Add scripts
+JHtml::_('jquery.framework');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/popper.min.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
+
 // Adjusting content width
 if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right')) {
     $span = "col-md-6";
@@ -141,12 +147,5 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
             </div>
         </footer>
         <jdoc:include type="modules" name="debug" style="none" />
-		<?php 
-			// Add JavaScript Frameworks - Placed at the end of the document so the pages load faster
-			JHtml::_('jquery.framework');
-			$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/popper.min.js');
-			$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
-			$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
-		?>
     </body>
 </html>
