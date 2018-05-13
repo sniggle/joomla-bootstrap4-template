@@ -16,38 +16,38 @@ defined('_JEXEC') or die;
 		<?php echo JText::_('COM_USERS_PROFILE_CORE_LEGEND'); ?>
 	</legend>
         <div class="card">
-            <div class="card-block">
-                <dl class="dl-horizontal">
-                        <dt class="col-sm-3">
+            <div class="card-body">
+                <dl class="row">
+                        <dt class="col-md-4">
                                 <?php echo JText::_('COM_USERS_PROFILE_NAME_LABEL'); ?>
                         </dt>
-                        <dd class="col-sm-9">
+                        <dd class="col-md-8">
                                 <?php echo $this->data->name; ?>
                         </dd>
-                        <dt class="col-sm-3">
+                        <dt class="col-md-4">
                                 <?php echo JText::_('COM_USERS_PROFILE_USERNAME_LABEL'); ?>
                         </dt>
-                        <dd class="col-sm-9">
+                        <dd class="col-md-8">
                                 <?php echo htmlspecialchars($this->data->username); ?>
                         </dd>
-                        <dt class="col-sm-3">
+                        <dt class="col-md-4">
                                 <?php echo JText::_('COM_USERS_PROFILE_REGISTERED_DATE_LABEL'); ?>
                         </dt>
-                        <dd class="col-sm-9">
+                        <dd class="col-md-8">
                                 <?php echo JHtml::_('date', $this->data->registerDate); ?>
                         </dd>
-                        <dt class="col-sm-3">
+                        <dt class="col-md-4">
                                 <?php echo JText::_('COM_USERS_PROFILE_LAST_VISITED_DATE_LABEL'); ?>
                         </dt>
 
                         <?php if ($this->data->lastvisitDate != '0000-00-00 00:00:00'){?>
-                                <dd class="col-sm-9">
+                                <dd class="col-md-8">
                                         <?php echo JHtml::_('date', $this->data->lastvisitDate); ?>
                                 </dd>
                         <?php }
                         else
                         {?>
-                                <dd class="col-sm-9">
+                                <dd class="col-md-8">
                                         <?php echo JText::_('COM_USERS_PROFILE_NEVER_VISITED'); ?>
                                 </dd>
                         <?php } ?>

@@ -35,8 +35,9 @@ Right now the following languages for the Joomla backend are supported in this t
 * Dutch (nl-NL)
 * English (en-GB)
 * German (de-DE)
-* Spanish (es-ES)
+* Russian (ru-RU)
 * Slovak (sk-SK)
+* Spanish (es-ES)
 
 :sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can create tickets with the file-attachments (just drag&drop into the text-field), or just fork the existing ones: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
 
@@ -68,9 +69,9 @@ The template is very close the Joomla! 3 standard and Bootstrap 4 standard behav
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.1.0 (https://getbootstrap.com)
+* Bootstrap v4.1.1 (https://getbootstrap.com)
 * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
-* Popper.js 1.14.0 - https://popper.js.org/
+* Popper.js 1.14.3 - https://popper.js.org/
 
 ## Fontawesome 4.7 vs. Fontawesome 5
 Recently Fontawesome 5 has been released. It offers a lot of new fonts and also font styles (brands, solid, regular light): https://fontawesome.com/how-to-use/upgrading-from-4

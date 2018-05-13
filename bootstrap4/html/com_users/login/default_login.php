@@ -36,44 +36,36 @@ JHtml::_('behavior.keepalive');
 	</div>
 	<?php endif; ?>
 
-	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal well">
+	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal card">
 
-		<fieldset>
+		<div class="card-body">
 			<?php foreach ($this->form->getFieldset('credentials') as $field) : ?>
 				<?php if (!$field->hidden) : ?>
 					<div class="form-group">
-						<div class="form-label">
-							<?php echo $field->label; ?>
-						</div>
-						<div class="controls">
-							<?php echo $field->input; ?>
-						</div>
+						<?php echo $field->label; ?>
+						<?php echo $field->input; ?>
 					</div>
 				<?php endif; ?>
 			<?php endforeach; ?>
 
 			<?php if ($this->tfa): ?>
 				<div class="form-group">
-					<div class="form-label">
-						<?php echo $this->form->getField('secretkey')->label; ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getField('secretkey')->input; ?>
-					</div>
+					<?php echo $this->form->getField('secretkey')->label; ?>
+					<?php echo $this->form->getField('secretkey')->input; ?>
 				</div>
 			<?php endif; ?>
 
 			<?php if (JPluginHelper::isEnabled('system', 'remember')) : ?>
-			<div  class="form-group">
-				<div class="form-label"><label><?php echo JText::_('COM_USERS_LOGIN_REMEMBER_ME') ?></label></div>
-				<div class="controls"><input id="remember" type="checkbox" name="remember" class="inputbox" value="yes"/></div>
+			<div  class="form-group form-check">
+				<input id="remember" type="checkbox" name="remember" class="inputbox form-check-input" value="yes"/>
+				<label for="remember" class="form-check-label"><?php echo JText::_('COM_USERS_LOGIN_REMEMBER_ME') ?></label>
 			</div>
 			<?php endif; ?>
 
 			<div class="form-group">
 				<div class="controls">
-					<button type="submit" class="btn btn-primary">
-                                            <i class="fa fa-sign-in"></i> 
+					<button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa fa-sign-in"></i> 
 						<?php echo JText::_('JLOGIN'); ?>
 					</button>
 				</div>
@@ -81,11 +73,11 @@ JHtml::_('behavior.keepalive');
 
 			<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('return'))); ?>" />
 			<?php echo JHtml::_('form.token'); ?>
-		</fieldset>
+		</div>
 	</form>
 </div>
 <div class="login">
-	<ul class="nav nav-tabs nav-stacked">
+	<ul class="nav nav-pills nav-fill">
 		<li class="nav-item">
 			<a class="nav-link" href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
 			<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
