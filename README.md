@@ -22,7 +22,6 @@ Components:
 Modules:
 * mod_breadcrumbs --> Breadcrumb Navigation
 * mod_finder --> Smart Search
-* mod_languages --> Language Switcher
 * mod_menu --> Menu Navigation
 Plugins:
 * plg_content_vote --> Joomla Voting & Rating System
