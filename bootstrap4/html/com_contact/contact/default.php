@@ -200,16 +200,18 @@ jimport('joomla.html.html.bootstrap');
 
 		<div class="contact-miscinfo">
 			<dl class="dl-horizontal">
-				<dt>
-					<span class="<?php echo $this->params->get('marker_class'); ?>">
-					<?php echo $this->params->get('marker_misc'); ?>
-					</span>
-				</dt>
-				<dd>
-					<span class="contact-misc">
-						<?php echo $this->contact->misc; ?>
-					</span>
-				</dd>
+				<div class="row">
+					<dt class="col-sm-3 text-sm-right">
+						<span class="<?php echo $this->params->get('marker_class'); ?> fa fa-info-circle">
+						<?php //echo $this->params->get('marker_misc'); ?>
+						</span>
+					</dt>
+					<dd class="col-sm-9">
+						<span class="contact-misc">
+							<?php echo $this->contact->misc; ?>
+						</span>
+					</dd>
+				</div>
 			</dl>
 		</div>
 
