@@ -8,9 +8,14 @@
  */
 defined('_JEXEC') or die;
 
-$app = JFactory::getApplication();
-$doc = JFactory::getDocument();
-$user = JFactory::getUser();
+use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
+
+$app = Factory::getApplication();
+$doc = Factory::getDocument();
+$user = Factory::getUser();
 $this->language = $doc->language;
 $this->direction = $doc->direction;
 
@@ -23,7 +28,7 @@ $view = $app->input->getCmd('view', '');
 $layout = $app->input->getCmd('layout', '');
 $task = $app->input->getCmd('task', '');
 $itemid = $app->input->getCmd('Itemid', '');
-$sitename = $app->get('sitename');
+$sitename = Factory::getConfig()->get('sitename');
 
 if ($task == "edit" || $layout == "form") {
     $fullWidth = 1;
@@ -31,16 +36,20 @@ if ($task == "edit" || $layout == "form") {
     $fullWidth = 0;
 }
 
+// set Meta Data
+$doc->setMetaData('viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+
 // Add Stylesheets
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
+HTMLHelper::_('stylesheet', 'bootstrap.min.css', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('stylesheet', 'font-awesome.min.css', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
 
 // Add scripts
-JHtml::_('jquery.framework');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/popper.min.js');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
+HTMLHelper::_('jquery.framework');
+HTMLHelper::_('script', 'popper.min.js', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('script', 'bootstrap.min.js', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('script', 'template.js', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true, 'conditional' => 'lt IE 9'));
 
 // Adjusting content width
 if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right')) {
@@ -52,25 +61,24 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 } else {
     $span = "col-md-12";
 }
+
+// Output as HTML5
+$this->setHtml5(true);
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+<html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <jdoc:include type="head" />
         <?php if($this->params->get('favicon')) { ?>
-            <link rel="shortcut icon" href="<?php echo JUri::root(true) . htmlspecialchars($this->params->get('favicon'), ENT_COMPAT, 'UTF-8'); ?>" />
+            <link rel="shortcut icon" href="<?php echo Uri::root(true) . htmlspecialchars($this->params->get('favicon'), ENT_COMPAT, 'UTF-8'); ?>" />
         <?php } ?>
-        <!--[if lt IE 9]>
-                <script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script>
-        <![endif]-->
     </head>
     <body>
         <header class="navbar navbar-expand-lg navbar-light bg-faded">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo JURI::base(); ?>"><?php echo $app->get('sitename'); ?></a>
+			<a class="navbar-brand" href="<?php echo Uri::base(); ?>"><?php echo $sitename; ?></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <jdoc:include type="modules" name="navbar-1" style="none" />
                 <jdoc:include type="modules" name="navbar-2" style="none" />
@@ -80,7 +88,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
             <div class="content">
                 <div class="jumbotron jumbotron-fluid bg-primary text-white">
                     <div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
-                        <?php if(JURI::base() == JURI::current()) { ?>
+                        <?php if(Uri::base() == Uri::current()) { ?>
                             <h1><?php echo $app->get('sitename'); ?></h1>
                                 <?php if ($this->params->get('sitedescription')) { ?>
                                     <p class="lead">
@@ -139,7 +147,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                     <div class="col-sm-4">
                         <p class="text-right">
                             <a href="#top" id="back-top">
-                                <i class="fa fa-arrow-up"></i> <?php echo JText::_('TPL_BOOTSTRAP4_BACKTOTOP'); ?>
+                                <i class="fa fa-arrow-up"></i> <?php echo Text::_('TPL_BOOTSTRAP4_BACKTOTOP'); ?>
                             </a>
                         </p>
                     </div>
