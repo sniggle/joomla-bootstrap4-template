@@ -1,63 +1,32 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.protostar
+ * @subpackage  Templates.bootstrap4
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die;
 
-$app = JFactory::getApplication();
-$doc = JFactory::getDocument();
-$user = JFactory::getUser();
-$this->language = $doc->language;
-$this->direction = $doc->direction;
+include_once (JPATH_ROOT. '/templates/' . $this->template . '/helper.php');
 
-// Getting params from template
-$params = $app->getTemplate(true)->params;
-
-// Detecting Active Variables
-$option = $app->input->getCmd('option', '');
-$view = $app->input->getCmd('view', '');
-$layout = $app->input->getCmd('layout', '');
-$task = $app->input->getCmd('task', '');
-$itemid = $app->input->getCmd('Itemid', '');
-$sitename = $app->get('sitename');
-
-if ($task == "edit" || $layout == "form") {
-    $fullWidth = 1;
-} else {
-    $fullWidth = 0;
-}
-
-// Add Stylesheets
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/font-awesome.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
-
-// Add scripts
-JHtml::_('jquery.framework');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/popper.min.js');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
-$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/template.js');
-
-// Adjusting content width
-if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right')) {
-    $span = "col-md-6";
-} elseif ($this->countModules('sidebar-left') && !$this->countModules('sidebar-right')) {
-    $span = "col-md-9";
-} elseif (!$this->countModules('sidebar-left') && $this->countModules('sidebar-right')) {
-    $span = "col-md-9";
-} else {
-    $span = "col-md-12";
-}
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <jdoc:include type="head" />
+        <?php if ($this->params->get('local_files') == 0) { ?>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="templates/bootstrap4/css/template.css">
+		
+		<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=" crossorigin="anonymous"></script>
+		<script async src="templates/bootstrap4/js/template.js"></script>
+		
+		<?php } ?>
+		<jdoc:include type="head" />
         <?php if($this->params->get('favicon')) { ?>
             <link rel="shortcut icon" href="<?php echo JUri::root(true) . htmlspecialchars($this->params->get('favicon'), ENT_COMPAT, 'UTF-8'); ?>" />
         <?php } ?>
@@ -88,7 +57,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                                     </p>
                                 <?php }?>
                         <?php } else {?>
-                            <h1><?php echo $this->getTitle();; ?>
+                            <h1><?php echo $this->getTitle();; ?></h1>
                         <?php } ?>
                     </div>
                 </div>
