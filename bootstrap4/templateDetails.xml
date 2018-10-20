@@ -67,7 +67,7 @@
                 <field name="favicon" class="" type="text" default="/templates/bootstrap4/favicon.ico"
 					label="TPL_BOOTSTRAP4_FAVICON"
 					description="TPL_BOOTSTRAP4_FAVICON_DESC" />
-		<field name="fluidContainer"
+				<field name="fluidContainer"
 					type="radio"
 					label="TPL_BOOTSTRAP4_FLUID_LABEL"
 					description="TPL_BOOTSTRAP4_FLUID_DESC"
@@ -77,6 +77,34 @@
 					<option value="1">TPL_BOOTSTRAP4_FLUID</option>
 					<option value="0">TPL_BOOTSTRAP4_STATIC</option>
 				</field>
+				<field name="local_files"
+					type="radio"
+					label="TPL_BOOTSTRAP4_LOCAL_FILES_LABEL"
+					description="TPL_BOOTSTRAP4_LOCAL_FILES_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="jmetagenerator"
+					type="radio"
+					label="TPL_BOOTSTRAP4_META_GEN_LABEL"
+					description="TPL_BOOTSTRAP4_META_GEN_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+            </fieldset>
+			<fieldset name="jfiles">
+				<field name="jall" type="checkbox" label="TPL_BOOTSTRAP4_JALL_LABEL" description="TPL_BOOTSTRAP4_JALL_DESC" value="1" />
+				<field name="jbootstrap" type="checkbox" label="TPL_BOOTSTRAP4_JBOOTSTRAP_LABEL" description="TPL_BOOTSTRAP4_JBOOTSTRAP_DESC" value="1" />
+				<field name="jcaption" type="checkbox" label="TPL_BOOTSTRAP4_JCAPTION_LABEL" description="TPL_BOOTSTRAP4_JCAPTION_DESC" value="1" />
+				<field name="jjquery" type="checkbox" label="TPL_BOOTSTRAP4_JQUERY_LABEL" description="TPL_BOOTSTRAP4_JQUERY_DESC" value="1" />
+				<field name="jjquery_migrate" type="checkbox" label="TPL_BOOTSTRAP4_JQUERY_MIGRATE_LABEL" description="TPL_BOOTSTRAP4_JQUERY_MIGRATE_DESC" value="1" />
+				<field name="jjquery_noconflict" type="checkbox" label="TPL_BOOTSTRAP4_JQUERY_NOCONFLICT_LABEL" description="TPL_BOOTSTRAP4_QUERY_NOCONFLICT_DESC" value="1" />
             </fieldset>
         </fields>
     </config>
