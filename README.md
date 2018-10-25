@@ -14,7 +14,7 @@ Just install the template and try it out.
 The template is based on the standard Bootstrap 4 look & feel and uses HTML overrides for the Joomla! user interface elements where possible. For forms we added a little javascript to add the missing CSS classes to avoid core-hacks.
 The following user interface elements are supported right now:
 Components:
-* com_content --> Articles
+* com_content --> Articles, Blogs, Featured Articles
 * com_contact --> Contacts
 * com_finder --> Smart Search
 * com_tags --> Tags
