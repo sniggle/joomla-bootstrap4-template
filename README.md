@@ -25,6 +25,7 @@ Modules:
 * mod_menu --> Menu Navigation
 Plugins:
 * plg_content_vote --> Joomla Voting & Rating System
+* plg_content_pagenavigation --> Joomla Content Plugin to show "Previous" and "Next" buttons under articles
 * and a lot of other ui elements like System Messages, Pagination, ReadMore, etc.
 You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
@@ -68,7 +69,7 @@ The template is very close the Joomla! 3 standard and Bootstrap 4 standard behav
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.1.1 (https://getbootstrap.com)
+* Bootstrap v4.1.3 (https://getbootstrap.com)
 * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
 * Popper.js 1.14.3 - https://popper.js.org/
 
