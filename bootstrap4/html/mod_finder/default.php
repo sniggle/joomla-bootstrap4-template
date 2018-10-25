@@ -124,7 +124,7 @@ jQuery(document).ready(function() {
  */
 if ($params->get('show_autosuggest', 1))
 {
-	JHtml::_('script', 'templates/spectakel/js/jquery.autocomplete.min.js', false, false, false, false, true);
+	JHtml::_('script', 'media/jui/js/jquery.autocomplete.min.js', false, false, false, false, true);
 
 	$script .= "
 	var suggest = jQuery('#mod-finder-searchword').autocomplete({
