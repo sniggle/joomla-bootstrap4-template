@@ -56,7 +56,7 @@ JHtml::_('jquery.framework');
     ?>">
 
         <header class="navbar navbar-static-top navbar-light bg-faded" role="banner">
-            <a class="navbar-brand" href="<?php echo $this->baseurl; ?>/">Spectakel</a>
+            <a class="navbar-brand" href="<?php echo $this->baseurl; ?>/"><?php echo $sitename; ?></a>
         </header>
         <div class="body">
             <div class="content">
@@ -93,7 +93,7 @@ JHtml::_('jquery.framework');
                             <hr />
                             <p><?php echo JText::_('JERROR_LAYOUT_PLEASE_CONTACT_THE_SYSTEM_ADMINISTRATOR'); ?></p>
                             <blockquote>
-                                <span class="label label-danger"><?php echo $this->error->getCode(); ?></span> <?php echo htmlspecialchars($this->error->getMessage(), ENT_QUOTES, 'UTF-8'); ?>
+                                <span class="badge badge-danger"><?php echo $this->error->getCode(); ?></span> <?php echo htmlspecialchars($this->error->getMessage(), ENT_QUOTES, 'UTF-8'); ?>
                             </blockquote>
                             <?php if ($this->debug) : ?>
                                 <?php echo $this->renderBacktrace(); ?>

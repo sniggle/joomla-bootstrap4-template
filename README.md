@@ -70,9 +70,9 @@ The template is very close the Joomla! 3 standard and Bootstrap 4 standard behav
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.1.3 (https://getbootstrap.com)
+* Bootstrap v4.4.1 (https://getbootstrap.com)
 * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
-* Popper.js 1.14.3 - https://popper.js.org/
+* Popper.js 1.16.0 - https://popper.js.org/
 
 ## Fontawesome 4.7 vs. Fontawesome 5
 Recently Fontawesome 5 has been released. It offers a lot of new fonts and also font styles (brands, solid, regular light): https://fontawesome.com/how-to-use/upgrading-from-4
