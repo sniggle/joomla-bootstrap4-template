@@ -39,7 +39,7 @@ Right now the following languages for the Joomla backend are supported in this t
 * Slovak (sk-SK)
 * Spanish (es-ES)
 
-:sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can create tickets with the file-attachments (just drag&drop into the text-field), or just fork the existing ones: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
+:sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can either fork the project and create a pull request or just create a ticket with the file-attachments (just drag&drop into the text-field). Starting point for new languages: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
 
 ### jQuery compatibility
 The minimal jQuery version required for Bootstrap 4 is 1.9.1. Joomla! 3.8 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/docs/4.1/getting-started/javascript/#dependencies 
@@ -57,10 +57,11 @@ You can always find the latest compiled version of the template here: https://gi
 Alternatively you can also just download the "bootstrap" folder of the repository, zip it and install it in your site to get the latest commits.
 
 ## Let us improve this Bootstrap 4 template
-We are happy for any kind of feedback:
+We are happy for any kind of feedback and support:
 * Did we miss a Joomla! component, module or layout?
 * Do you have improvement ideas in the existing overrides?
-Just create an issue here on github and let us know! :-)
+
+:sunny: You can contribute by either creating an issue or a pull request here on github to support the development of this template! :-)
 
 ### Create your own version of the Joomla! Bootstrap 4 template
 The template is very close the Joomla! 3 standard and Bootstrap 4 standard behavior. You can also use it as a starting point for your own Bootstrap 4 template. Just use the existing overrides and change your index.php according to your design ideas. :-)
