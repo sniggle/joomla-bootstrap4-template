@@ -64,7 +64,7 @@
 					label="JGLOBAL_DESCRIPTION"
 					description="JGLOBAL_SUBHEADING_DESC"
 					filter="string" />
-                <field name="favicon" class="" type="text" default="/templates/bootstrap4/favicon.ico"
+                <field name="favicon" class="" type="text" default=""
 					label="TPL_BOOTSTRAP4_FAVICON"
 					description="TPL_BOOTSTRAP4_FAVICON_DESC" />
 		<field name="fluidContainer"
