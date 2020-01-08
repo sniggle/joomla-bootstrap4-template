@@ -26,6 +26,7 @@ Modules:
   * Navbar
   * Pills
   * Tabs
+
 Plugins:
 * plg_content_vote --> Joomla Voting & Rating System
 * plg_content_pagenavigation --> Joomla Content Plugin to show "Previous" and "Next" buttons under articles
