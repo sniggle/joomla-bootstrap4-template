@@ -22,7 +22,10 @@ Components:
 Modules:
 * mod_breadcrumbs --> Breadcrumb Navigation
 * mod_finder --> Smart Search
-* mod_menu --> Menu Navigation
+* mod_menu --> Menu Navigation. Offers menu class suffixes for styling options (e.g. ' flex-column' for vertical layouts). To ease usability predefined module layouts are available for
+  * Navbar
+  * Pills
+  * Tabs
 Plugins:
 * plg_content_vote --> Joomla Voting & Rating System
 * plg_content_pagenavigation --> Joomla Content Plugin to show "Previous" and "Next" buttons under articles
