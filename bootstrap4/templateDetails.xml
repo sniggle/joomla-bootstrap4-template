@@ -67,6 +67,9 @@
                 <field name="favicon" class="" type="text" default=""
 					label="TPL_BOOTSTRAP4_FAVICON"
 					description="TPL_BOOTSTRAP4_FAVICON_DESC" />
+                <field name="customcss" class="" type="text" default=""
+					label="TPL_BOOTSTRAP4_CUSTOMCSS"
+					description="TPL_BOOTSTRAP4_CUSTOMCSS_DESC" />
 		<field name="fluidContainer"
 					type="radio"
 					label="TPL_BOOTSTRAP4_FLUID_LABEL"

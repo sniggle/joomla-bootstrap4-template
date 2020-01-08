@@ -30,6 +30,13 @@ Plugins:
 You can also check the details here: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/html
 If you are missing components, modules or other UI elements, which are not compatible with bootstrap 4, just let us know. We can then add them and provide a new version of the template.
 
+### Template Parameters
+The template offers some parameters to configure it based on your needs. You can configure it under "Advanced" settings in the Template Style:
+* Description: Optional text shown as a sub-heading
+* Favicon: Set your own Favicon for your website
+* Custom CSS-File: Integrate your own CSS file for further styling
+* Fluid Layout: Use Bootstraps fluid (full screen width) or static (fixed breakpoints depending on window size) container layout. (Both are responsive)
+
 ### Language Support
 Right now the following languages for the Joomla backend are supported in this template:
 * Dutch (nl-NL)
