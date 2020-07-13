@@ -91,7 +91,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                                     </p>
                                 <?php }?>
                         <?php } else {?>
-                            <h1><?php echo $this->getTitle();; ?>
+			    <h1><?php echo $this->getTitle();; ?></h1>
                         <?php } ?>
                     </div>
                 </div>
