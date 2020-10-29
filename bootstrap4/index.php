@@ -24,6 +24,9 @@ $layout = $app->input->getCmd('layout', '');
 $task = $app->input->getCmd('task', '');
 $itemid = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
+$menu             = $app->getMenu();
+$active           = $app->getMenu()->getActive();
+$pageclass        = $app->getParams()->get('pageclass_sfx');
 
 if ($task == "edit" || $layout == "form") {
     $fullWidth = 1;
@@ -68,7 +71,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                 <script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="<?php echo $active->alias . ' page-'.str_replace('com_','',$option) . ' view-'.$view. ' task-'.($task? $task : 'none').($pageclass? ' '.$pageclass : '').' itemid-'.$active->id;?>">
         <header class="navbar navbar-expand-lg navbar-light bg-faded">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
