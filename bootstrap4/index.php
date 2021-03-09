@@ -91,7 +91,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                                     </p>
                                 <?php }?>
                         <?php } else {?>
-                            <h1><?php echo $this->getTitle();; ?>
+			    <h1><?php echo $this->getTitle(); ?></h1>
                         <?php } ?>
                     </div>
                 </div>
@@ -137,7 +137,6 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
                     </div>
                     <div class="col-sm-4 text-center">
                         <jdoc:include type="modules" name="footer" style="none" />
-                        <p></p>
                     </div>
                     <div class="col-sm-4">
                         <p class="text-right">
