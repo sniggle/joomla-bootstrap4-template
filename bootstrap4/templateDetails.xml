@@ -64,7 +64,7 @@
 					label="JGLOBAL_DESCRIPTION"
 					description="JGLOBAL_SUBHEADING_DESC"
 					filter="string" />
-                <field name="favicon" class="" type="text" default=""
+                <field name="favicon" class="" type="media" default=""
 					label="TPL_BOOTSTRAP4_FAVICON"
 					description="TPL_BOOTSTRAP4_FAVICON_DESC" />
                 <field name="customcss" class="" type="text" default=""
