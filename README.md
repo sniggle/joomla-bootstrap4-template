@@ -45,6 +45,7 @@ Right now the following languages for the Joomla backend are supported in this t
 * Dutch (nl-NL)
 * English (en-GB)
 * German (de-DE)
+* Portuguese Brazil (pt-BR)
 * Russian (ru-RU)
 * Slovak (sk-SK)
 * Spanish (es-ES)
@@ -52,7 +53,7 @@ Right now the following languages for the Joomla backend are supported in this t
 :sunny: If you want to contribute to the template, feel free to add further languages! Two files are needed with in total roughly 22 translations. You can either fork the project and create a pull request or just create a ticket with the file-attachments (just drag&drop into the text-field). Starting point for new languages: https://github.com/sniggle/joomla-bootstrap4-template/tree/master/bootstrap4/language/en-GB
 
 ### jQuery compatibility
-The minimal jQuery version required for Bootstrap 4 is 1.9.1. Joomla! 3.8 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/docs/4.1/getting-started/javascript/#dependencies 
+The minimal jQuery version required for Bootstrap 4 is 1.9.1. Joomla! 3.8 shipps with jQuery v1.12.4. Therefore you don't need to worry about jQuery version conflicts. The template just uses the Joomla! jQuery. For the ones who are interested in the details: Just check the Bootstrap 4 Javascript dependencies here: https://getbootstrap.com/docs/4.6/getting-started/javascript/#dependencies 
 
 ### Bootstrap 2 and Bootstrap 4 in one site?
 As Joomla! 3 shipps with Bootstrap 2.3.2, it automatically loads the bootstrap framework where needed. The Javascript files of Bootstrap 2 and Bootstrap 4 loaded at the same time can result in strange UI behaviors. (e.g. Dropdowns don't load correctly or after several seconds, etc.)
@@ -80,9 +81,9 @@ The template is very close the Joomla! 3 standard and Bootstrap 4 standard behav
 The template is based on a famous Joomla! 3 template called Protostar.
 We just kept the license information in all source files and chose a compatible license here on github.
 The template contains the following libraries
-* Bootstrap v4.4.1 (https://getbootstrap.com)
+* Bootstrap v4.6.0 (https://getbootstrap.com)
 * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io
-* Popper.js 1.16.0 - https://popper.js.org/
+* Popper.js 1.16.1 - https://popper.js.org/
 
 ## Fontawesome 4.7 vs. Fontawesome 5
 Recently Fontawesome 5 has been released. It offers a lot of new fonts and also font styles (brands, solid, regular light): https://fontawesome.com/how-to-use/upgrading-from-4
